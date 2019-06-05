@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/michellewag/correct-change/issues"
   },
-  "homepage": "https://github.com/michellewag/correct-change#readme"
+  "homepage": "https://github.com/michellewag/correct-change#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
