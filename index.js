@@ -1,13 +1,28 @@
+//costInt = cost as Integer
+//cashInt = cash as Integer
+
 function correctChange(cost, cashProvided) {
     
-var costAsInterger = cost * 100;
-var cashAsInterger = cashProvided * 100;
+var costInt = cost * 100;
+var cashInt = cashProvided * 100;
 
-var pennies = cashAsInteger - costAsInteger;
+var change = {
+    pennies: 0,
+    nickels: 0,
+};
 
-return {
-    pennies: pennies,
-  };
+var changeRemaining = cashInt - costInt;
+
+if (changeRemaining >= 5) {
+    change.nickels = 1;
+    changeRemaining -= 5;
+    
+}
+
+change.pennies = changeRemaining; 
+
+return change;
+   
 }
 
 module.exports.correctChange = correctChange;
